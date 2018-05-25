@@ -16,11 +16,13 @@ extract audio fingerprinter by calcuating the difference of the energy of each f
 calcuate the zero-crossing which can be used to predict the frequency roughly
 1. divide audio into frames 
 2. calcuate zcr of each frame using the following equation
+
 ![ZCR](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/ZCR.JPG)
                                    
 where sgn(x) is given by
 
 ![sgn(x)](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/sgn.JPG)
+
 
 ## getLocalMaximum
 get few local maximun in a matrix
