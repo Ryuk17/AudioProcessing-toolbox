@@ -9,5 +9,5 @@ for i = 1:framenumber;                                            % enframe
        	 zcr(i) = zcr(i) + abs(sgn(framesignal(j))-sgn(framesignal(j-1)));
         end
     end  
-zcr = zcr/(2*framelength);                                         % calcuate the ratio 
+zcr = zcr/(2*length(signal));                                         % calcuate the ratio 
 end   
