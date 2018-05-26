@@ -1,5 +1,6 @@
 # AudioProcessing
 An toolbox for audio processing in Matlab,the verison of Matlab is R2016a
+The audio sample in this toobox is 8000Hz, 16 bits
 
 ## extractAudioFingerpriner
 extract audio fingerprinter by calcuating the difference of the energy of each frequency sub-band 
