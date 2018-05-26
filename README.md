@@ -25,4 +25,4 @@ where sgn(x) is given by
 
 
 ## getLocalMaximum
-get few local maximun in a matrix
+This function is to get few maximuns in local matrix in a given matrix
