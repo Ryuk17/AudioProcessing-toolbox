@@ -1,5 +1,5 @@
 # AudioProcessing
-An toolbox for audio processing in Matlab,the verison of Matlab is R2016a<\br>
+An toolbox for audio processing in Matlab,the verison of Matlab is R2016a
 The audio sample in this toobox is 8000Hz, 16 bits
 
 ## extractAudioFingerpriner
@@ -24,6 +24,6 @@ where sgn(x) is given by
 
 ![sgn(x)](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/sgn.JPG)
 
-
+![zcrpic](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/ZeroCrossingRate.png)
 ## getLocalMaximum
 This function is to get few maximuns in local matrix in a given matrix
