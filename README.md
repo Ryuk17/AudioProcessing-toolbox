@@ -1,6 +1,6 @@
 # AudioProcessing
 An toolbox for audio processing in Matlab,the verison of Matlab is R2016a. </br>
-The audio sample in this toobox is 8000Hz, 16 bits
+The audio sample in this toobox is 8000Hz, 16 bits.
 
 ## extractAudioFingerpriner
 extract audio fingerprinter by calcuating the difference of the energy of each frequency sub-band 
@@ -13,6 +13,9 @@ extract audio fingerprinter by calcuating the difference of the energy of each f
 5. calcuate audio fingerprinter as follow</br>
 ![Bit Derviation](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/bitDerivation.JPG)
 
+The result is shown below
+![printer](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/fingerprinter.png)
+
 ## getZCR
 calcuate the zero-crossing which can be used to predict the frequency roughly
 1. divide audio into frames 
@@ -23,6 +26,8 @@ calcuate the zero-crossing which can be used to predict the frequency roughly
 where sgn(x) is given by
 
 ![sgn(x)](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/sgn.JPG)
+
+The result is shown below.
 
 ![zcrpic](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/ZeroCrossingRate.png)
 ## getLocalMaximum
