@@ -33,5 +33,13 @@ The result is shown below.
 ## getLocalMaximum
 This function is to get few maximuns in local matrix in a given matrix
 
-## getLandmark
+## getLandmarks
 calcuate the enegry max points(also called landmark) in frequency spectrum 
+1. divide audio into frames, the overlap length is alterable
+2. do fft for each frame 
+3. calcuate the energy of frequency 
+4. calcuate the local maximum as landmark
+The result is shown below
+![landmark-2d](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/landmark-2d.png)
+![landmark-3d](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/landmark-3d.png)
+
