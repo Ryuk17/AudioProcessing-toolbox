@@ -32,3 +32,6 @@ The result is shown below.
 ![zcrpic](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/ZeroCrossingRate.png)
 ## getLocalMaximum
 This function is to get few maximuns in local matrix in a given matrix
+
+## getLandmark
+calcuate the enegry max points(also called landmark) in frequency spectrum 
