@@ -43,3 +43,11 @@ The result is shown below
 ![landmark-2d](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/landmark-2d.png)
 ![landmark-3d](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/landmark-3d.png)
 
+## getEnergy
+calcuate the short-time energy</br>
+1.divide audio into frames, the overlap length is alterable</br>
+2.calcuate the energy using the following equation:</br>
+![stenergy](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/short-time-energy.png)
+
+The result is shown below</br>
+![getEnrgy](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/getEnergy.png)
