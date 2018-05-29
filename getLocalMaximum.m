@@ -11,7 +11,7 @@ n = 0;
 subMatrix = zeros(m1,m2);	                    % local matrix
 for x = 1:m1/2:a
 	for y = 1:m2:b
-        if x+m1-1 <= a && y+m2-1 <= b
+       	 if x+m1-1 <= a && y+m2-1 <= b
             subMatrix = M(x:x+m1-1,y:y+m2-1);
             s = sort(subMatrix(:),'descend');
             for k = 1:np
@@ -20,5 +20,5 @@ for x = 1:m1/2:a
                 local(n,:) = [r,c,s(k)];
             end
         end
-	end
+       end
 end
