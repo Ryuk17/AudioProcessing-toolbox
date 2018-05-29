@@ -51,3 +51,5 @@ calcuate the short-time energy</br>
 
 The result is shown below</br>
 ![getEnrgy](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/getEnergy.png)
+
+## getSpecgram
