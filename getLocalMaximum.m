@@ -1,9 +1,9 @@
 function [local] =getLocalMaximum(M,m1,m2,np) 
 % the function is to get the few local maximums in a matrix
 % M is traget matrix
-%	m1*m1 the size of local matrix
+% m1*m1 the size of local matrix
 % np is the total of the local maximum
-%	the format of local is abscissa value, ordinate value, maxumum
+% the format of local is abscissa value, ordinate value, maxumum
 [a,b] = size(M);
 local = zeros(fix(a/m1*b/m2)*np,3);
 n = 0;
