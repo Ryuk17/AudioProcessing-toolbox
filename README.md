@@ -53,4 +53,7 @@ The result is shown below</br>
 ![getEnrgy](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/getEnergy.png)
 
 ## getSpecgram
-Implementation of Specgram() 
+Implementation of matlab function Specgram() 
+1. divide signal into frames in time domain</br>
+2. do fft of each frame</br>
+![specgram](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/specgram.png)
