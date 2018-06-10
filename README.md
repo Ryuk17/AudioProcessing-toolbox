@@ -60,3 +60,16 @@ Implementation of matlab function Specgram()
 
 ## getLMSPredictor
 ![LMS](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/LMSPredictor.JPG)
+The update procedure is shown below:</br>
+  K1(n) = b*COR0(n-1)/VAR0(n-1);</br>
+	K2(n) = b*COR1(n-1)/VAR1(n-1);</br>
+	Xest(n) =  K1(n)*r0(n-1) + K2(n)*r1(n-1);</br>
+	e0(n) = Xrec(n);</br>
+	e1(n) = e0(n) - K1(n)*r0(n-1);</br>
+	VAR0(n) = u*VAR0(n-1) + 0.5*[r0(n-1)^2+e0(n)^2];</br>
+	COR0(n) = u*COR0(n-1) + r0(n-1)*e0(n);</br>
+	VAR1(n) = u*VAR1(n-1) + 0.5*[r1(n-1)^2+e1(n)^2];</br>
+	COR1(n) = u*COR1(n-1) + r1(n-1)*e1(n);</br>
+	r1(n) = a*(r0(n-1)-K1(n)*e0(n));</br>
+	r0(n) = a*e0(n);</br>
+	Xerr(n) = Xrec(n) - Xest(n);</br>
