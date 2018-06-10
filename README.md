@@ -73,3 +73,4 @@ The update procedure is shown below:</br>
 	r1(n) = a*(r0(n-1)-K1(n)*e0(n));</br>
 	r0(n) = a*e0(n);</br>
 	Xerr(n) = Xrec(n) - Xest(n);</br>
+The function returns the estimate value Xest and the setimate error Xerr
