@@ -60,6 +60,10 @@ Implementation of matlab function Specgram()
 
 ## getLMSPredictor
 ![LMS](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/LMSPredictor.JPG)
+where a = b = 0.953125</br>
+r0 = r1 = 0</br>
+COR0 = COR1 =0</br>
+VAR0 = VAR1 = 1</br>
 The update procedure is shown below:</br>
   K1(n) = b*COR0(n-1)/VAR0(n-1);</br>
 	K2(n) = b*COR1(n-1)/VAR1(n-1);</br>
