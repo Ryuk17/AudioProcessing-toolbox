@@ -1,4 +1,4 @@
-function [F] = extractAudioFingerprint( path )
+function [F] = getAudioFingerprint( path )
 % path：the path of audio sample
 % F: the audio fingerprinter of audio sample
 [data,f] = audioread(path);
