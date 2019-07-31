@@ -2,7 +2,7 @@
 An toolbox for audio processing in Matlab,the verison of Matlab is R2016a. </br>
 The audio sample in this toobox is 8000Hz, 16 bits.
 
-## extractAudioFingerpriner
+## 1. extractAudioFingerpriner
 extract audio fingerprinter by calcuating the difference of the energy of each frequency sub-band 
 ![Extraction process](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/audiofingerprinter.jpg)
 
@@ -16,7 +16,7 @@ extract audio fingerprinter by calcuating the difference of the energy of each f
 The result is shown below
 ![printer](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/fingerprinter.png)
 
-## getZCR
+## 2. getZCR
 calcuate the zero-crossing which can be used to predict the frequency roughly
 1. divide audio into frames 
 2. calcuate zcr of each frame using the following equation
@@ -33,7 +33,7 @@ The result is shown below.
 ## getLocalMaximum
 This function is to get few maximuns in local matrix in a given matrix
 
-## getLandmarks
+## 3. getLandmarks
 calcuate the enegry max points(also called landmark) in frequency spectrum 
 1. divide audio into frames, the overlap length is alterable
 2. do fft for each frame 
@@ -43,7 +43,7 @@ The result is shown below
 ![landmark-2d](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/landmark-2d.png)
 ![landmark-3d](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/landmark-3d.png)
 
-## getEnergy
+## 4. getEnergy
 calcuate the short-time energy</br>
 1.divide audio into frames, the overlap length is alterable</br>
 2.calcuate the energy using the following equation:</br>
@@ -52,13 +52,13 @@ calcuate the short-time energy</br>
 The result is shown below</br>
 ![getEnrgy](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/getEnergy.png)
 
-## getSpecgram
+## 5. getSpecgram
 Implementation of matlab function Specgram() 
 1. divide signal into frames in time domain</br>
 2. do fft of each frame</br>
 ![specgram](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/specgram.png)
 
-## getLMSPredictor
+## 6. getLMSPredictor
 ![LMS](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/pic/LMSPredictor.JPG)
 ```
 where a = b = 0.953125 
