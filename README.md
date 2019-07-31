@@ -2,36 +2,32 @@
 An toolbox for audio processing in Matlab,the verison of Matlab is R2016a. </br>
 The audio sample in this toobox is 8000Hz, 16 bits.
 
-## 1. extractAudioFingerpriner
-extract audio fingerprinter by calcuating the difference of the energy of each frequency sub-band 
+## 1. getAudioFingerpriner
+[getAudioFingerprinter](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/getAudioFingerprinter.m) calcuates the difference of the energy of each frequency sub-band as shown below.  
 ![Extraction process](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/audiofingerprinter.jpg)
 
+Specifically, the extraction process including the following steps:
 1. divide audio into frames, the overlap length is alterable
 2. do fft for each frame 
 3. divide frequency spectrum into 32 frequency sub bands
 4. calcuate the energy of each sub band
-5. calcuate audio fingerprinter as follow</br>
+5. calcuate audio fingerprinter as follow  
 ![Bit Derviation](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/bitDerivation.JPG)
 
 The result is shown below
 ![printer](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/fingerprinter.png)
 
 ## 2. getZCR
-calcuate the zero-crossing which can be used to predict the frequency roughly
+[getZCR](https://github.com/DandelionLau/AudioProcessing-toolbox/blob/master/getZCR.m) calcuates the zero-crossing rate which can be used to predict the frequency roughly.
+Specifically, the extraction process including the following steps:
 1. divide audio into frames 
 2. calcuate zcr of each frame using the following equation
 
-![ZCR](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/ZCR.JPG)
-                                   
-where sgn(x) is given by
-
-![sgn(x)](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/sgn.JPG)
-
-The result is shown below.
-
-![zcrpic](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/ZeroCrossingRate.png)
-## getLocalMaximum
-This function is to get few maximuns in local matrix in a given matrix
+![ZCR](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/ZCR.JPG)                      
+where sgn(x) is given by  
+![sgn(x)](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/sgn.JPG)  
+The result is shown below  
+![zcrpic](https://github.com/DandelionLau/AudioProcessing/blob/master/pic/ZeroCrossingRate.png)  
 
 ## 3. getLandmarks
 calcuate the enegry max points(also called landmark) in frequency spectrum 
