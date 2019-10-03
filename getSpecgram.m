@@ -7,7 +7,7 @@ X = zeros(tn,tm/2+1);
 for i = 1:tn
 	Y = fft(tframe(i,:));
 	L = length(tframe(i,:));
-	P2 = abs(Y/L);
+	P2 = abs(Y);
 	P1 = P2(1:L/2+1);
 	X(i,:) = P1;
 end
